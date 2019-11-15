@@ -83,6 +83,18 @@ ion-icon {
     border-top: 1px solid #383838;
 }
 
+/*.main-menu li:last-child {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.main-menu li .logo-instagram {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+    /*padding-top: 0.25rem;*/
+}
+
 .main-menu a:hover,
 .main-menu a:focus {
     background: #333;
