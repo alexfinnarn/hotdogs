@@ -2,6 +2,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: Helvetica, sans-serif;
 }
 
 ion-icon {
@@ -21,197 +22,73 @@ ion-icon {
     border: 0;
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     display: inline-block;
+    margin: 0.5rem 0;
 }
 
-/* Button styling */
-.menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333;
+.main-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fbfafa;
+    box-shadow: inset 0px 2px 3px #cccccc;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-    color: #c00;
-}
-
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
-.main-menu {
-    position: absolute;
-    display: none;
-    left: -200px;
-    top: 0;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    transition: left 0.3s ease,
-    box-shadow 0.3s ease;
-    z-index: 999;
-}
-
-.main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 3.7rem 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    min-height: 100%;
-    width: 200px;
-    background: #1a1a1a;
-}
-
-.main-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
-}
-
-.main-menu li:first-child a {
-    border-top: 1px solid #383838;
-}
-
-/*.main-menu li:last-child {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
+/*.main-cta::before {*/
+/*    content: "";*/
+/*    position: fixed;*/
+/*    top: -10px;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 10px;*/
+/*    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);*/
+/*    z-index: 100;*/
 /*}*/
 
-.main-menu li .logo-instagram {
+.main-cta__hotdog {
+    display: flex;
+    flex: 1;
+}
+
+.main-cta__message {
+    display: flex;
+    flex: 1;
+    color: #555559;
     font-size: 1.5rem;
-    margin-right: 0.25rem;
-    /*padding-top: 0.25rem;*/
+    max-width: calc(100% - 10rem);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
-    background: #333;
-    text-decoration: underline;
+.main-cta__button {
+    display: flex;
+    flex: 1;
+    padding: 1.0rem 1.5rem;
+    border-radius: 10px;
+    background-color: #286782;
+    color: #ffffff;
 }
 
-.main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
+.hotdog-types {
+
 }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-    display: block;
-    left: 0;
-    outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+.hotdog-types__description {
+    display: flex;
+    width: 180px;
 }
 
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-    z-index: 1001;
+.hotdog-types__description:before {
+    content: "-";
+    padding-right: 4px;
 }
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-    position: relative;
-    z-index: 1000;
-}
-
-/*
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop{
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    background: #000;
-    background: rgba(0,0,0,.85);
-    cursor: default;
-}
-
-@supports (position: fixed) {
-    .main-menu,
-    .main-menu:target + .backdrop,
-    .main-menu[aria-expanded="true"] + .backdrop{
-        position: fixed;
-    }
-}
-
-/*
- Larger screen styling
- Horizontal menu
-*/
-@media (min-width: 768px) {
-    .logo {
-        display: none;
-    }
-    .menu-toggle,
-    .main-menu .menu-close {
-        display: none;
-    }
-
-    /* Undo positioning of off-canvas menu */
-    .main-menu {
-        position: relative;
-        left: auto;
-        top: auto;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        max-width: 400px;
-    }
-
-    .main-menu ul {
-        display: flex;
-
-        /* Undo off-canvas styling */
-        padding: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        height: auto;
-        width: auto;
-        background: none;
-    }
-
-    .main-menu a {
-        color: #000000;
-        text-transform: uppercase;
-        border: 0 !important; /* Remove borders from off-canvas styling */
-    }
-
-    .main-menu li:last-child {
-        display: none;
-    }
-
-    .main-menu a:hover,
-    .main-menu a:focus {
-        background: none; /* Remove background from off-canvas styling */
-        color: #c00;
-    }
-}
-
