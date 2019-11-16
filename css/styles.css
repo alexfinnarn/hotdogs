@@ -7,7 +7,6 @@ html {
 
 ion-icon {
     font-size: 2rem;
-    /*color: #ffffff;*/
 }
 
 /* Screen reader only */
@@ -25,11 +24,44 @@ ion-icon {
 .header {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
 }
 
-.logo {
+.desktop-header {
+    display: none;
+}
+
+.mobile-header {
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+
+.mobile-header__phone-number,
+.mobile-header__instagram {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #555559;
+}
+
+.mobile-title {
     display: inline-block;
     margin: 0.5rem 0;
+    font-size: 1.75rem;
+}
+
+.icon-instagram {
+    font-size: 1.5rem;
+    margin-right: 0.35rem;
+}
+
+.content {
+    padding-top: 4rem;
 }
 
 .main-cta {
@@ -146,6 +178,10 @@ ion-icon {
 }
 
 @media (min-width: 768px) {
+    .mobile-header,
+    .mobile-title {
+        display: none;
+    }
 
     .main-cta__message {
         font-size: 3rem;

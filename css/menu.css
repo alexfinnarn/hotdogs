@@ -56,11 +56,6 @@
     border-top: 1px solid #383838;
 }
 
-.main-menu li .logo-instagram {
-    font-size: 1.5rem;
-    margin-right: 0.35rem;
-}
-
 .main-menu a {
     display: flex;
     align-items: center;
@@ -136,9 +131,6 @@
  Horizontal menu
 */
 @media (min-width: 768px) {
-    .logo {
-        display: none;
-    }
     .menu-toggle,
     .main-menu .menu-close {
         display: none;
@@ -171,10 +163,6 @@
         font-size: 1.2rem;
         text-transform: uppercase;
         border: 0 !important; /* Remove borders from off-canvas styling */
-    }
-
-    .main-menu li:last-child {
-        display: none;
     }
 
     .main-menu a:hover,
