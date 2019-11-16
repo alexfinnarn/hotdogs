@@ -30,13 +30,12 @@
     z-index: 999;
 }
 
+/* @todo Make these more BEM like? instead of using tags? */
 .main-menu ul {
     list-style: none;
     margin: 0;
     padding: 3.7rem 0 0;
     /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
     box-shadow: -8px 0 8px rgba(0,0,0,.5);
     min-height: 100%;
     width: 200px;
@@ -92,8 +91,6 @@
     display: block;
     left: 0;
     outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
     box-shadow: 3px 0 12px rgba(0,0,0,.25);
 }
 
@@ -155,7 +152,7 @@
         height: auto;
         display: block;
         margin: 0 auto;
-        max-width: 400px;
+        padding: 2rem 0;
     }
 
     .main-menu ul {
@@ -163,16 +160,15 @@
 
         /* Undo off-canvas styling */
         padding: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
         height: auto;
-        width: auto;
+        width: 100%;
         background: none;
     }
 
     .main-menu a {
         color: #000000;
+        font-size: 1.2rem;
         text-transform: uppercase;
         border: 0 !important; /* Remove borders from off-canvas styling */
     }
@@ -185,5 +181,6 @@
     .main-menu a:focus {
         background: none; /* Remove background from off-canvas styling */
         color: #c00;
+        text-decoration: none;
     }
 }
