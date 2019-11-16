@@ -61,7 +61,7 @@ ion-icon {
 }
 
 .content {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .main-cta {
@@ -85,6 +85,7 @@ ion-icon {
     flex: 1;
     color: #555559;
     font-size: 1.5rem;
+    font-weight: 100;
     max-width: calc(100% - 10rem);
     text-align: center;
     margin-bottom: 2rem;
@@ -178,14 +179,52 @@ ion-icon {
 }
 
 @media (min-width: 768px) {
+    .hotdog-leader {
+        height: 502px;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 25%),
+        url("/images/header-background.jpeg");
+        background-repeat: repeat-x;
+    }
+
+    .hotdog-leader__instagram {
+        color: #ffffff;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    ion-icon {
+        font-size: 2.5rem;
+    }
+
+    .hotdog-leader__instagram:hover {
+        color: #c00;
+    }
+
+    .header {
+        position: relative;
+        top: unset;
+    }
+
     .mobile-header,
     .mobile-title {
         display: none;
     }
 
+    .desktop-header {
+        display: block;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+
     .main-cta__message {
         font-size: 3rem;
-        font-weight: 100;
         max-width: 920px;
     }
 
