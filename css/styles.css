@@ -1,6 +1,6 @@
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
     font-family: Helvetica, sans-serif;
 }
@@ -17,7 +17,7 @@ ion-icon {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
@@ -69,36 +69,130 @@ ion-icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
     background-color: #fbfafa;
     box-shadow: inset 0px 2px 3px #cccccc;
 }
 
-.main-cta__hotdog {
-    display: flex;
-    flex: 1;
+.main-cta__hotdog-container {
+    position: relative;
+    display: block;
+    /*margin: 8% auto auto;*/
+    width: 400px;
+    height: 200px;
+    background: none;
+
+    animation: fadeIn ease 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
+/*.main-cta__hotdog-container:hover {*/
+/*    animation: spin 1s;*/
+/*}*/
+
+
+.main-cta__hotdog-bun {
+    position: absolute;
+    /*top: 16.5%;*/
+    left: 37%;
+    width: 27%;
+    height: 80%;
+    background: #f5dbb2;
+    border-radius: 25%;
+    transform: rotate(45deg);
+}
+
+.main-cta__hotdog {
+    position: absolute;
+    top: -7.5%;
+    left: 27%;
+    width: 45%;
+    height: 115%;
+    background: #ab5326;
+    border-radius: 40%;
+}
+
+.main-cta__hotdog-mustard {
+    position: absolute;
+    top: 44%;
+    right: -96%;;
+    transform: rotate(90deg);
+}
+
+.main-cta__hotdog-mustard-image {
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+
 .main-cta__message {
-    display: flex;
-    flex: 1;
     color: #555559;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: 100;
-    max-width: calc(100% - 10rem);
+    max-width: calc(100% - 6rem);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-top: 1rem;
+
+    animation: slideInFromLeft 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .main-cta__button {
-    display: flex;
-    flex: 1;
     padding: 1.0rem 1.5rem;
     border-radius: 10px;
     background-color: #286782;
     color: #ffffff;
+
+    animation: slideUpFromBottom 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideUpFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hotdog-types {
@@ -119,8 +213,8 @@ ion-icon {
 }
 
 .hotdog-type__image {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
     /*margin-bottom: 2rem;*/
 }
 
@@ -180,8 +274,8 @@ ion-icon {
 
 @media (min-width: 768px) {
     .hotdog-leader {
-        height: 502px;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 25%),
+        height: 375px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 25%),
         url("/images/header-background.jpeg");
         background-repeat: repeat-x;
     }
@@ -194,7 +288,7 @@ ion-icon {
         align-items: center;
         padding: 2rem;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     ion-icon {
@@ -223,8 +317,12 @@ ion-icon {
         padding-top: 0;
     }
 
+    .main-cta {
+        padding-top: 2rem;
+    }
+
     .main-cta__message {
-        font-size: 3rem;
+        font-size: 2.75rem;
         max-width: 920px;
     }
 
