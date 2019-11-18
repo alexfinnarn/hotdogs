@@ -4,7 +4,7 @@ Hello! This is my solution to a work sample test listed at: https://github.com/D
 
 ![hotdog-screenshot](https://user-images.githubusercontent.com/3640707/69019842-60a34c80-0980-11ea-8658-a2eff60f68e3.jpeg)
 
-I assumed the prompt to be ambiguous for the purpose of making the job candidate make decisions and show you how they think. In the rest of the readme, I'll go through my thought process in creating this website from the provided PSD and mock image. I'm about 90% happy with the current site, and I'll list the remaining issues at the end. I believe you shouldn't spend too much time finessing everything without some dialog back and forth to the designers, stakeholders, and other developers or else you might be wasting time where compromises or changes would have saved time and money...plus this is an unpaid test :)
+I assumed the prompt to be ambiguous for the purpose of making the job candidate make decisions and show you how they think. In the rest of the readme, I'll go through my thought process in creating this website from the provided PSD and mock image. I'm about 90% happy with the current site, and I'll list the remaining issues at the end. I believe you shouldn't spend too much time finessing everything without some dialog back and forth to the designers, stakeholders, and other developers or else you might be wasting time where compromises or changes would have saved time and money.
 
 Hosted site: https://alexfinnarn.github.io/hotdogs
 
@@ -16,9 +16,9 @@ Before I began, I assumed that I only needed to code up the homepage and not the
 
 My first thought was how to present the site in a mobile-first manner. While the mock image only showed what appeared to be desktop-like dimensions, more than half of web traffic these days comes from mobile devices which can be of all kinds of different screen dimensions. 
 
-In a mobile-first approach, content is key. This is why I removed what I called the "hotdog leader" image in the header and replaced it with a mobile menu bar. The menu bar consists of an off-canvas menu, the business name, and two ways to further interact with the business via phone or Instagram. On really tiny screens, I left off the phone number since it wasn't in the header of the mock image anyway and screen realestate was scarce.
+In a mobile-first approach, content is key. This is why I removed what I called the "hotdog leader" image in the header and replaced it with a mobile menu bar allowing key content to greet the user's eyes sooner. The menu bar consists of an off-canvas menu, the business name, and two ways to further interact with the business via phone or Instagram. On really tiny screens, I left off the phone number since it wasn't in the header of the mock image anyway and screen realestate was scarce.
 
-I wanted to use the least amount of JavaScript (JS) possible on the site since I still believe in a web that allows people to surf with JS disabled. I sometimes surf the web that way in order to not be tracked and save data...and it's just fun to see who's still paying attention these days. In the spirit of saving time and standing on the shoulder of giants, I don't want deny that I took a solution from the web and modified it for this site: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+I wanted to use the least amount of JavaScript (JS) possible on the site since I still believe in a web that allows people to surf with JS disabled. I sometimes surf the web that way in order to not be tracked and save data...and it's just fun to see who's still paying attention these days. In the spirit of saving time and standing on the shoulder of giants, I don't want deny that I took an entirely CSS-based off-canvas menu soliton solution from the web and modified it for this site to save time: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 
 The rest of the site functions mostly the same as the desktop version except the flex direction and order of the hotdog types and footer information. Flexbox easily allows for changing direction in containers from rows to columns and reordering content. 
 
@@ -26,7 +26,7 @@ One decision I made was to place the hotdog descriptions after the images on the
 
 ## Desktop Version
 
-For the desktop version, I altered the "hotdog leader" image to allow the business tag line and call-to-action (CTA) button to appear above-the-fold, at least on my work machine. The "More Dogs 'n Make Em Hot" button is the main conversion on the homepage so I thought it was important to make sure the user saw this without having to scroll on both desktop and mobile versions.
+For the desktop version, I altered the "hotdog leader" image to allow the business tag line and call-to-action (CTA) button to appear above-the-fold, at least in my browser of choice. The "More Dogs 'n Make Em Hot" button is the main conversion on the homepage so I thought it was important to make sure the user saw this without having to scroll on both desktop and mobile versions.
 
 ## Animations and Colorful Hotdog
 
@@ -36,7 +36,7 @@ The mock image has a monochromatic version of a hotdog, but there is plenty of r
 
 ## Shortcomings/Improvements
 
-Like I said, there are several areas that I would like to improve upon with input from teammates and stkeholders, but I've fiddled around with these hotdogd enough for my own good.
+Like I said, there are several areas that I would like to improve upon with input from teammates and stakeholders, but I've fiddled around with these hotdogs enough for my own good.
 
 - **Above-the-fold content on mobile devices** - I mainly checked mobile screen widths via Chromium's device toolbar, which is no substitute for real device testing. The hotdog, tagline, and button might not appear above-the-fold until that is tested and adjusted.
 - **Briefly missing icons on page load** - I used [Iconicons](https://ionicons.com/usage) for the Instagram, phone, and hamburger menu icons. Without any use of JS, a fallback, or loading indicator, the icons pop into the screen in a non-ideal manner. 
@@ -49,6 +49,6 @@ Like I said, there are several areas that I would like to improve upon with inpu
 
 ## Conclusion
 
-I hope I've shown that I can take a mock image of a website and successfully turn it into a website that helps a hotdog business drive sales. I had fun coding up this work sample, but now I'm so hungry I need to go eat three lunches...I look forward to discussing the frontend developer role with you in the near future!
+I hope I've shown that I can take a mock image of a website and successfully turn it into a website that helps a hotdog business drive sales. While the homepage isn't 100% the way I'd like it, I provided ample reasoning as to why I made the choices I did and some items I would improve with more input and time. I had fun coding up this work sample, but now I'm so hungry I need to go eat three lunches...I look forward to discussing the frontend developer role with you in the near future!
 
 
