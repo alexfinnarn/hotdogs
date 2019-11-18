@@ -158,8 +158,12 @@
         background: none;
     }
 
+    .main-menu li {
+        margin: 0 1.25rem;
+    }
+
     .main-menu a {
-        color: #000000;
+        color: #555559;
         font-size: 1.2rem;
         text-transform: uppercase;
         border: 0 !important; /* Remove borders from off-canvas styling */
