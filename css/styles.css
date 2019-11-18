@@ -5,11 +5,6 @@ html {
     font-family: Helvetica, sans-serif;
 }
 
-ion-icon {
-    font-size: 2rem;
-}
-
-/* Screen reader only */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -19,6 +14,10 @@ ion-icon {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+ion-icon {
+    font-size: 2rem;
 }
 
 .header {
@@ -118,7 +117,6 @@ ion-icon {
 }
 
 .main-cta__message {
-    color: #555559;
     font-size: 1.75rem;
     font-weight: 100;
     max-width: calc(100% - 6rem);
@@ -176,7 +174,6 @@ ion-icon {
 .hotdog-type__image {
     max-width: 100%;
     height: auto;
-    /*margin-bottom: 2rem;*/
 }
 
 .hotdog-type__title {
@@ -191,7 +188,6 @@ ion-icon {
 
 .footer {
     background-color: #fbfafa;
-    color: #555559;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,13 +372,12 @@ ion-icon {
     }
 }
 
-
+/* Not enough room for phone number below this screen size */
 @media (max-width: 500px) {
     .mobile-header__phone-number {
         display: none;
     }
 }
-
 
 /* Animations */
 @keyframes fadeIn {

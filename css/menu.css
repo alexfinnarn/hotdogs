@@ -1,5 +1,3 @@
-
-/* Button styling */
 .menu-toggle {
     display: inline-block;
     padding: .75em 15px;
@@ -13,10 +11,6 @@
     color: #c00;
 }
 
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
 .main-menu {
     position: absolute;
     display: none;
@@ -30,7 +24,6 @@
     z-index: 999;
 }
 
-/* @todo Make these more BEM like? instead of using tags? */
 .main-menu ul {
     list-style: none;
     margin: 0;
@@ -43,7 +36,6 @@
 }
 
 .main-menu a {
-    /*display: block;*/
     padding: .75em 15px;
     line-height: 1em;
     font-size: 1em;
@@ -126,17 +118,12 @@
     }
 }
 
-/*
- Larger screen styling
- Horizontal menu
-*/
 @media (min-width: 768px) {
     .menu-toggle,
     .main-menu .menu-close {
         display: none;
     }
 
-    /* Undo positioning of off-canvas menu */
     .main-menu {
         position: relative;
         left: auto;
@@ -149,8 +136,6 @@
 
     .main-menu ul {
         display: flex;
-
-        /* Undo off-canvas styling */
         padding: 0;
         box-shadow: none;
         height: auto;
@@ -166,12 +151,12 @@
         color: #555559;
         font-size: 1.2rem;
         text-transform: uppercase;
-        border: 0 !important; /* Remove borders from off-canvas styling */
+        border: 0 !important;
     }
 
     .main-menu a:hover,
     .main-menu a:focus {
-        background: none; /* Remove background from off-canvas styling */
+        background: none;
         color: #c00;
         text-decoration: none;
     }
