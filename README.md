@@ -36,17 +36,19 @@ The mock image has a monochromatic version of a hotdog, but there is plenty of r
 
 ## Shortcomings/Improvements
 
-Like I said, there are several areas that I would like to improve upon with input from teammates, but I've fiddled around with these hotdogd enough for my own good.
+Like I said, there are several areas that I would like to improve upon with input from teammates and stkeholders, but I've fiddled around with these hotdogd enough for my own good.
 
-- **Flash of unstyled text with icons** - I used [Iconicons](https://ionicons.com/usage) for the Instagram, phone, and hamburger menu icons. Without any use of JS, a fallback, or loading indicator, the icons pop into the screen in a non-ideal manner. 
+- **Above-the-fold content on mobile devices** - I mainly checked mobile screen widths via Chromium's device toolbar, which is no substitute for real device testing. The hotdog, tagline, and button might not appear above-the-fold until that is tested and adjusted.
+- **Briefly missing icons on page load** - I used [Iconicons](https://ionicons.com/usage) for the Instagram, phone, and hamburger menu icons. Without any use of JS, a fallback, or loading indicator, the icons pop into the screen in a non-ideal manner. 
 - **Not ideal CSS class names** - I useda BEM-like syntax for the CSS classes, but I'm not entirely happy with the final semantics of some of the names. I would discuss and sdopt what the team thinks best for class naming consistency and semantics.
 - **Expanded Instagram logo in header** - I made the hotdog leader image repeat the background since I noticed the mock repeated part of the image. There isn't a container on the Instagram icon link so it would expand on large screens rather than keeping with the rest of the content.
 - **Improve lazy loading of images** - Below-the-fold images could have better lazy-loading support with some sort of JS intersection observer solution. I added a flag on the images that supposedly works natively in Chrome, and hopefully browsers will take over more of this work natively in the future.
 - **Hotdog type images are different heights** - The PSD has hotdog images of different heights. On the website, the widths of the images are equal, but it would be best to crop the images to be the same height as well as width. Ideally, a designer would approve of the changes and send over new assets.
+- **Blue accent line on hotdog information** - On larger screens the accent line left of the hotdog title looks decent, but once the screen size gets smaller it impacts readability and should probably be removed.
 - **Further accessibility checks** - I tabbed through the site to see that I could follow the links, and there are a few ARIA roles used, but I didn't spend enough time checking for accessibility. Accessibility is important; however, each team has their own level of WCAG complaince they wish to reach and I'd want to know more about that rather than spend a bunch of time making assumptions myself.
 
 ## Conclusion
 
-I hope I've shown that I can take a mock image of a website and successfully turn it into a website that helps a hotdog business drive sales. I had fun coding up this work sample, but now I'm so hungry I need to go eat three dinners...I look forward to discussing the frontend developer role with you in the near future!
+I hope I've shown that I can take a mock image of a website and successfully turn it into a website that helps a hotdog business drive sales. I had fun coding up this work sample, but now I'm so hungry I need to go eat three lunches...I look forward to discussing the frontend developer role with you in the near future!
 
 
