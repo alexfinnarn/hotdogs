@@ -237,7 +237,7 @@ ion-icon {
 
 @media (min-width: 768px) {
     .hotdog-leader {
-        height: 37px;
+        height: 375px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 25%),
         url("https://alexfinnarn.github.io/hotdogs/images/header-background-2.jpeg");
         background-repeat: repeat-x;
