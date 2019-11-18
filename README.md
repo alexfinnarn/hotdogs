@@ -2,6 +2,8 @@
 
 Hello! This is my solution to a work sample test listed at: https://github.com/Dynamit/front-end-code-day/tree/master/hotdog
 
+![hotdog-screenshot](https://user-images.githubusercontent.com/3640707/69019842-60a34c80-0980-11ea-8658-a2eff60f68e3.jpeg)
+
 I assumed the prompt to be ambiguous for the purpose of making the job candidate make decisions and show you how they think. In the rest of the readme, I'll go through my thought process in creating this website from the provided PSD and mock image. I'm about 90% happy with the current site, and I'll list the remaining issues at the end. I believe you shouldn't spend too much time finessing everything without some dialog back and forth to the designers, stakeholders, and other developers or else you might be wasting time where compromises or changes would have saved time and money...plus this is an unpaid test :)
 
 Hosted site: https://alexfinnarn.github.io/hotdogs
