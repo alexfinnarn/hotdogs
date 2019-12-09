@@ -14,13 +14,21 @@ Before I began, I assumed that I only needed to code up the homepage and not the
 
 ## Mobile-first Approach
 
-My first thought was how to present the site in a mobile-first manner. While the mock image only showed what appeared to be desktop-like dimensions, more than half of web traffic these days comes from mobile devices which can be of all kinds of different screen dimensions. 
+My first thought was how to present the site in a mobile-first manner. While the mock image only showed what appeared to be desktop-like dimensions, more than half of web traffic these days comes from mobile devices which can be of all kinds of different screen dimensions.
+
+### Content Is Key
 
 In a mobile-first approach, content is key. This is why I removed what I called the "hotdog leader" image in the header and replaced it with a mobile menu bar allowing key content to greet the user's eyes sooner. The menu bar consists of an off-canvas menu, the business name, and two ways to further interact with the business via phone or Instagram. On really tiny screens, I left off the phone number since it wasn't in the header of the mock image anyway and screen realestate was scarce.
 
+### CSS-only Off-canvas Menu
+
 I wanted to use the least amount of JavaScript (JS) possible on the site since I still believe in a web that allows people to surf with JS disabled. I sometimes surf the web that way in order to not be tracked and save data...and it's just fun to see who's still paying attention these days. In the spirit of saving time and standing on the shoulder of giants, I don't want deny that I took an entirely CSS-based off-canvas menu soliton solution from the web and modified it for this site to save time: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 
-The rest of the site functions mostly the same as the desktop version except the flex direction and order of the hotdog types and footer information. Flexbox easily allows for changing direction in containers from rows to columns and reordering content. 
+### Flexbox Use
+
+The rest of the site functions mostly the same as the desktop version except the flex direction and order of the hotdog types and footer information. Flexbox easily allows for changing direction in containers from rows to columns and reordering content.
+
+### Some User Experience Theory
 
 One decision I made was to place the hotdog descriptions after the images on the mobile version based on [the idea to "support information consumption flow"](https://ux.stackexchange.com/questions/50430/should-the-description-of-a-picture-be-above-it-or-below). When I scroll through a page, I first see an image and then my mind wants to connect that to a description, and I think a lot of people's minds work the same way.
 
