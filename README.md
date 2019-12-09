@@ -42,6 +42,10 @@ I also made sure that the tagline and CTA button were above-the-fold so I could 
 
 The mock image has a monochromatic version of a hotdog, but there is plenty of research on [how adding color can increase conversions in website content](https://getuplift.co/emotional-targeting-leverage-the-power-of-emotion-to-grow-conversions/). No one ever eats a monochromatic hotdog, but everyone is familiar with the colors of the bun, hotdog, and mustard I used to make up the hotdog. I took the liberty of coloring the hotdog to trigger the webiste visitor's memory of hotdogs and hopefully start a rumble in their tummies!
 
+## Optimized Images And Lazy Loading
+
+I used a graphic editing tool, GIMP, to optimize the images for the web dramtiacally reducing their size. Drawing the hotdog in CSS also helped to reduce the amount of data transferred to the client. Finally, I used a HTML attribute for lazy loading that only (supposedly) works for Chrome now, but will make its way into browser specs in the future. In a non-JS solution, it is hard to do lazy loading in any other way.
+
 ## Shortcomings/Improvements
 
 Like I said, there are several areas that I would like to improve upon with input from teammates and stakeholders, but I've fiddled around with these hotdogs enough for my own good.
